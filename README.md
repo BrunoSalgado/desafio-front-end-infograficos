@@ -28,6 +28,10 @@ O desafio é realizar o desenvolvimento front-end da homepage de um jornal fict�
 - Imagens [aqui](Arquivos/Imagens)
 - JSONS [aqui](Arquivos/JSON)
 
+## Implementações
+- Site responsivo
+
 ## Configurações
 - Altere a string "YOUR_API_KEY" para a sua chave da API Google no arquivo [index.html](index.html)
 - Caso queira trocar o endereço do mapa, altere a variável address [aqui](assets/js/map.js)
+- As configurações de cores utilizadas no site estão no arquivo [variables.less](assets/less/variables.less). Basta alterar e compilar o less novamente.
