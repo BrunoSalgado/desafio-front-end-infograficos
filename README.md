@@ -23,21 +23,11 @@ O desafio é realizar o desenvolvimento front-end da homepage de um jornal fict�
 * O mapa deve ser gerado usando a API do Google Maps
 * O pin/mark do mapa deve ser inserido via API do Google Maps
 
-## Observações
-* Você está livre para escolher a estrutura de diretórios da aplicação 
-* Você não deve utilizar nenhum framework CSS (Bootstrap, Foundation e etc) neste desafio.
-* Os arquivos .json não podem ser alterados
-* Dúvida? Entre em contato por email: mateus.santos@oglobo.com.br
-
 ## Arquivos
 - Layout [aqui](Arquivos/Layout)
 - Imagens [aqui](Arquivos/Imagens)
 - JSONS [aqui](Arquivos/JSON)
 
-## Como submeter seu projeto
-- Fork esse projeto
-- Coloque seu projeto no repositório
-- Escreva no arquivo README.md as instruções para rodar o mesmo 
-- Envie o link do repositório para daniel.lima@oglobo.com.br e mateus.santos@oglobo.com.br, com o assunto: TESTE - Front-End O Globo
-
-## Boa sorte!
+## Configurações
+- Altere a string "YOUR_API_KEY" para a sua chave da API Google no arquivo [index.html](index.html)
+- Caso queira trocar o endereço do mapa, altere a variável address [aqui](assets/js/map.js)
