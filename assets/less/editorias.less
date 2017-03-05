@@ -1,0 +1,86 @@
+section.editorias {
+  margin-top: 118px;
+  h2 {
+    margin: 0;
+    color: @defaultFontColor;
+    font-family: Georgia, serif;
+    font-size: 34px;
+    font-weight: 600;
+    text-transform: uppercase;
+    float: left;
+  }
+  .filter {
+    float: right;
+    label {
+      font-family: Georgia, serif;
+      font-size: 22px;
+      margin: 0 20px;
+    }
+    select {
+      font-family: Verdana, sans-serif;
+      font-size: 18.4px;
+      color: #FFFFFF;
+      background-color: #000000;
+      padding: 4.5px 4px;
+    }
+  }
+  #list-news {
+    margin-top: 70px;
+    li {
+      display: none;
+      vertical-align: top;
+      margin-bottom: 54px;
+      margin-right: 77px;
+      &.visible {
+        display: inline-table;
+      }
+      &.last-news {
+        margin-right: 0;
+      }
+      .box-news {
+        border-left: 4px solid @red;
+        width: 100%;
+        max-width: 281px;
+        padding-left: 27px;
+        //margin-right: 90px;
+      }
+      img {
+        width: 100%;
+        margin-top: 11px;
+      }
+      h4 {
+        font-family: Georgia, serif;
+        font-size: 28px;
+        font-weight: 600;
+        margin: 20px 0 0;
+      }
+      p {
+        font-family: Verdana, sans-serif;
+        font-size: 18px;
+        color: #666666;
+        margin-top: 18px;
+      }
+      a {
+        font-family: Georgia, serif;
+        font-size: 22px;
+        font-weight: 600;
+        color: @defaultFontColor;
+        text-decoration: none;
+        &:hover {
+          color: @red;
+        }
+      }
+      .date {
+        float: left;
+        font-family: Verdana, sans-serif;
+        font-size: 14px;
+      }
+      h3 {
+        float: right;
+        font-family: Verdana, sans-serif;
+        font-size: 14px;
+        margin: 0;
+      }
+    }
+  }
+}
