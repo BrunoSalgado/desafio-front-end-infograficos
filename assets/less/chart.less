@@ -1,0 +1,88 @@
+section.graph {
+  border-top: 2px dashed #9A9DA4;
+  border-bottom: 2px dashed #9A9DA4;
+  margin: 104px auto 113px;
+  padding: 118px 0;
+  .agr-chart {
+    display: table;
+    width: 100%;
+    .info, .graph-column {
+      display: table-cell;
+      vertical-align: bottom;
+    }
+  }
+  h2 {
+    margin: 0 0 10px;
+    color: @defaultFontColor;
+    font-family: Georgia, serif;
+    font-size: 34px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .graph-column {
+    height: 360px;
+    float: left;
+    .chart {
+      height: 360px;
+      display: table;
+      .column {
+        width: 47px;
+        text-align: center;
+        display: table-cell;
+        vertical-align: bottom;
+        padding-right: 48px;
+        &.primary {
+          label {
+            color: #CE282C;
+            font-weight: 600;
+          }
+          .bar {
+            background-color: #CE282C;
+          }
+        }
+        .bar {
+          background-color: @defaultFontColor;
+          position: relative;
+          label {
+            color: white;
+            position: absolute;
+            -webkit-transform: rotate(-90deg);
+            -moz-transform: rotate(-90deg);
+            -o-transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+            transform-origin: 17px 5px;
+            bottom: 0;
+            font-family: Verdana, sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+          }
+        }
+        label {
+          font-family: Georgia, serif;
+          font-size: 28px;
+          margin-bottom: 8px;
+          display: block;
+        }
+      }
+    }
+  }
+  .info {
+    width: 505px;
+    margin-left: 20px;
+    h3 {
+      font-family: Georgia, serif;
+      font-size: 28px;
+      font-weight: 600;
+      margin: 0;
+    }
+    p {
+      margin-bottom: 0;
+      font-family: Verdana, sans-serif;
+      font-size: 18px;
+      column-count: 2;
+      text-align: justify;
+      column-gap: 36px;
+    }
+  }
+}
