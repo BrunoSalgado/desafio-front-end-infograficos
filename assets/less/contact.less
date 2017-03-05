@@ -1,0 +1,79 @@
+section.contact {
+  padding-top: 136px;
+  padding-bottom: 114px;
+  background: #FFFFFF;
+  background: -moz-linear-gradient(left, #FFFFFF 0%, #FFFFFF 50%, @red 50%, @red 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #FFFFFF), color-stop(50%, #FFFFFF), color-stop(50%, @red), color-stop(100%, @red));
+  background: -webkit-linear-gradient(left, #FFFFFF 0%, #FFFFFF 50%, @red 50%, @red 100%);
+  background: -o-linear-gradient(left, #FFFFFF 0%, #FFFFFF 50%, @red 50%, @red 100%);
+  background: -ms-linear-gradient(left, #FFFFFF 0%, #FFFFFF 50%, @red 50%, @red 100%);
+  background: linear-gradient(to right, #FFFFFF 0%, #FFFFFF 50%, @red 50%, @red 100%);
+  h2 {
+    margin: 0;
+    color: @defaultFontColor;
+    font-family: Georgia, serif;
+    font-size: 34px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .info-contact, .form-contact {
+    width: 50%;
+    float: left;
+    min-height: 200px;
+  }
+  .info-contact {
+    h3 {
+      font-family: Georgia, serif;
+      font-size: 28px;
+      font-weight: 600;
+      color: @defaultFontColor;
+      margin-bottom: 23px;
+    }
+    p {
+      font-family: Verdana, sans-serif;
+      font-size: 18px;
+    }
+  }
+  .form-contact {
+    width: 505px;
+    margin: 0 20px;
+    h3 {
+      font-family: Georgia, serif;
+      font-size: 28px;
+      font-weight: 600;
+      color: #FFFFFF;
+      margin-bottom: 23px;
+    }
+    label {
+      font-family: Verdana, sans-serif;
+      font-size: 18px;
+      color: #FFFFFF;
+      display: block;
+      margin-bottom: 4px;
+    }
+    input, textarea {
+      font-family: Verdana, sans-serif;
+      font-size: 18px;
+      color: @defaultFontColor;
+      width: 100%;
+      border: none;
+      padding: 8px 4px;
+      margin-bottom: 18px;
+      box-sizing: border-box;
+    }
+    textarea {
+      height: 115px;
+      resize: none;
+    }
+    button[type="submit"] {
+      font-family: Verdana, sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: #FFFFFF;
+      background-color: #000000;
+      border: none;
+      padding: 10px 19px;
+      float: right;
+    }
+  }
+}
