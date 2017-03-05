@@ -25,7 +25,7 @@ $(document).ready(function () {
     }
 });
 
-/*--------- START NAVIGATION EVENTS ---------*/
+/*--------- NAVIGATION EVENTS ---------*/
 $(document).on('click', '.dot', function () {
     slide.autoPlay = false;
     slide.changeFromDot($(this).data('slide'));
@@ -48,7 +48,6 @@ var slide = {
     classItem: 'item-slide',
     idNavigation: 'navigation-slide',
     time: 6000,
-    timeTransition: 1000,
     autoPlay: true,
     qtdSlides: 0,
     init: function () {
@@ -71,8 +70,8 @@ var slide = {
         if (prevElement[0] == null) {
             prevElement = $(this.slides[this.qtdSlides - 1]);
         }
-        $('.' + this.classItem).filter('.' + this.classActive).fadeOut(this.timeTransition).removeClass(this.classActive);
-        prevElement.addClass(this.classActive).fadeIn(this.timeTransition * 2);
+        $('.' + this.classItem).filter('.' + this.classActive).hide().removeClass(this.classActive);
+        prevElement.addClass(this.classActive).show();
         this.checkDot($(prevElement).attr('id'));
     },
     next: function () {
@@ -80,8 +79,8 @@ var slide = {
         if (nextElement[0] == null) {
             nextElement = $(this.slides[0]);
         }
-        $('.' + this.classItem).filter('.' + this.classActive).fadeOut(this.timeTransition).removeClass(this.classActive);
-        nextElement.addClass(this.classActive).fadeIn(this.timeTransition * 2);
+        $('.' + this.classItem).filter('.' + this.classActive).hide().removeClass(this.classActive);
+        nextElement.addClass(this.classActive).show();
         this.checkDot($(nextElement).attr('id'));
     },
     checkDot: function (id) {
@@ -119,7 +118,7 @@ var slide = {
     },
     changeFromDot: function (id) {
         this.checkDot(id.replace('#', ''));
-        $('.' + this.classItem).fadeOut(this.timeTransition).removeClass(this.classActive);
-        $('.' + this.classItem).filter(id).fadeIn(this.timeTransition * 2).addClass(this.classActive);
+        $('.' + this.classItem).hide().removeClass(this.classActive);
+        $('.' + this.classItem).filter(id).show().addClass(this.classActive);
     }
 };
