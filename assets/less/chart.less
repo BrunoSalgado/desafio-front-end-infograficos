@@ -86,3 +86,37 @@ section.graph {
     }
   }
 }
+
+@media screen and (max-width: 980px) {
+  section.graph {
+    .agr-chart {
+      display: block;
+      .graph-column, .info {
+        display: block;
+        width: 100%;
+      }
+      .graph-column {
+        margin-bottom: 20px;
+        .chart {
+          margin: 0 auto;
+        }
+      }
+      .info {
+        margin: 0 2%;
+        width: 96%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  section.graph {
+    .agr-chart {
+      .info {
+        p {
+          column-count: 1;
+        }
+      }
+    }
+  }
+}
