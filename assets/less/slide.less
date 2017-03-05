@@ -49,7 +49,10 @@ section.slide {
       position: absolute;
       cursor: pointer;
       &:hover {
-        border-color: lighten(@red, 10%);
+        background-color: lighten(@red, 10%);
+      }
+      &::selection {
+        background-color: transparent;
       }
     }
 
