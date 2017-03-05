@@ -23,6 +23,9 @@ $(document).ready(function () {
             }
         });
     }
+    $('header .icon-menu').click(function () {
+        $('nav.navbar').slideToggle(200);
+    });
 });
 
 /*--------- NAVIGATION EVENTS ---------*/

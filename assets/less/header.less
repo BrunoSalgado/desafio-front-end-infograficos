@@ -7,6 +7,9 @@ header {
   .container {
     display: table;
   }
+  .icon-menu {
+    display: none;
+  }
   nav.navbar {
     display: table-cell;
     vertical-align: bottom;
@@ -55,6 +58,59 @@ header {
             font-weight: 600;
           }
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding-top: 18px;
+    position: relative;
+    .icon-menu {
+      display: block;
+      float: right;
+      margin-right: 2%;
+      margin-top: 3%;
+      img {
+        width: 80%;
+      }
+    }
+    nav.navbar {
+      display: none;
+      padding-top: 20px;
+      width: 100%;
+      position: absolute;
+      z-index: 100;
+      background: #FFFFFF;
+      li {
+        width: 96%;
+        text-align: left;
+        padding: 2%;
+        ul {
+          position: relative;
+          top: 0;
+          border: none;
+          width: 100%;
+          padding: 0;
+          li {
+            margin: 0;
+          }
+        }
+      }
+    }
+    img.logo {
+      width: 50%;
+      margin-left: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    .icon-menu {
+      img {
+        width: 50%;
       }
     }
   }

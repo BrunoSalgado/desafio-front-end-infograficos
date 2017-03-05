@@ -11,6 +11,9 @@ section.editorias {
   }
   .filter {
     float: right;
+    .line-mobile {
+      display: none;
+    }
     label {
       font-family: Georgia, serif;
       font-size: 22px;
@@ -80,6 +83,66 @@ section.editorias {
         font-family: Verdana, sans-serif;
         font-size: 14px;
         margin: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  section.editorias {
+    #list-news {
+      li {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  section.editorias {
+    #list-news {
+      text-align: center;
+      li {
+        text-align: left;
+        margin-right: 4px;
+        .box-news {
+          padding-left: 4px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 880px) {
+  section.editorias {
+    margin-top: 20px;
+    h2 {
+      float: inherit;
+      margin-left: 16px;
+    }
+    #list-news {
+      li {
+        margin-right: 20px !important;
+        .box-news {
+          padding-left: 20px !important;
+        }
+      }
+    }
+    .filter {
+      margin-top: 16px;
+      float: inherit;
+      display: block;
+      label {
+        margin-left: 16px;
+        float: left;
+      }
+      select {
+        float: right;
+      }
+      .line-mobile {
+        display: block;
+        clear: both;
+        margin-top: 8px;
       }
     }
   }
